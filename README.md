@@ -10,11 +10,11 @@ accesses to a page using the extended page tables.
 To setup this extension, run the following (assuming Linux):
 
 ```
-git clone https://github.com/Bareflank/hypervisor
-git clone https://github.com/Bareflank/extended_apis
-git clone https://github.com/Bareflank/extended_apis_example_hook.git
+git clone https://github.com/bareflank/hypervisor
+git clone https://github.com/bareflank/extended_apis
+git clone https://github.com/jaredwright/ept_example.git
 mkdir build; cd build
-cmake ../hypervisor -DCONFIG=extended_apis_example_hook/config.cmake
+cmake ../hypervisor -DCONFIG=ept_example/config.cmake
 make -j<# cores + 1>
 ```
 
