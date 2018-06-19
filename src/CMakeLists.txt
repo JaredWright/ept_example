@@ -26,4 +26,5 @@ add_vmm_executable(
     ept_example_vmm
     SOURCES ept_example.cpp
     LIBRARIES eapis_hve
+    LIBRARIES capstone
 )
